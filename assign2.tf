@@ -1,4 +1,4 @@
-#test
+#test1
 resource "aws_instance" "web" {
     for_each = ({
         "ami-066784287e358dad1" = "t2.micro"
