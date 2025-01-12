@@ -1,4 +1,4 @@
-
+#test
 resource "aws_instance" "web" {
     for_each = ({
         "ami-066784287e358dad1" = "t2.micro"
@@ -8,7 +8,7 @@ resource "aws_instance" "web" {
     instance_type = each.value
 
     tags = {
-    Name = "Hello World"
+    Name = "Hello World 1"
     }
 }
 
